@@ -1,10 +1,10 @@
 require 'winrm'
 
 conn = WinRM::Connection.new( 
-  endpoint: 'https://sizzle.htb.local:5986/wsman',
+  endpoint: 'hostname:5986/wsman',
   transport: :ssl,
-  :client_cert => 'amanda.cer',
-  :client_key => 'amanda.key',
+  :client_cert => '.cer',
+  :client_key => '.key',
   :no_ssl_peer_verification => true
 )
 
